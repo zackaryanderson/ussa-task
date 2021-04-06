@@ -1,0 +1,25 @@
+{
+  "name": "ussa-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "sqlite3 db/election.db < db/schema.sql",
+    "seed": "sqlite3 db/ussa.db < db/seeds.sql",
+    "db": "sqlite3 db/ussa.db"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zackaryanderson/ussa-task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zackaryanderson/ussa-task/issues"
+  },
+  "homepage": "https://github.com/zackaryanderson/ussa-task#readme",
+  "dependencies": {
+    "mysql2": "^2.2.5"
+  }
+}
